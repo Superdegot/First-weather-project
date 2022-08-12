@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css"/>
+    
+  </head>
+  <body>
+    <h1>There is no bad weather - there is only inappropriate clothing 🥵🥶</h1>
+
+    <button type="button" class="btn btn-light">London</button>
+    <button type="button" class="btn btn-light">Paris</button>
+    <button type="button" class="btn btn-light">Berlin</button>
+
+    <form>
+      <input id="form" type="text" placeholder="Search for a city" autocomplete="off" autofocus="on" >
+      <input type="submit"  value="Check the weather there">
+       
+    </form>
+    <div class="container"
+    >
+      <div class="row">
+        <div class="col-4"> <ul> <li id="city"> 🗺️ </li> <li id="description">  </li>  <p> 📅 </p> <li id="temperature"> °C</li> </ul></div>
+        <div class="col-4"><img src="images/sun.svg" alt="" width="300" /></div>
+        <div class="col-4"> 
+          <ul>
+            
+            <li>🌬️ Wind: <span id="wind"></span>km/h</li>
+            <li>💧 Humidity: <span id="humidity"></span>%  </li>
+            
+          </ul>
+      </div>
+      <div class="row">
+      <div class="col-2"> Monday   </br> 38°C</div>
+      <div class="col-2"> Tuesday  </br> 35°C</div>
+      <div class="col-2"> Wednesday </br> 26°C</div>
+      <div class="col-2"> Thursday   </br> 25°C</div>
+      <div class="col-2"> Friday   </br> 28°C</div>
+      <div class="col-2"> Saturday  </br> 28°C</div>
+
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
